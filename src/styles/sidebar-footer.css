@@ -1,0 +1,275 @@
+body{
+    background-color: #000;
+    font-family: var(--font-dm-sans);
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:12px;
+    width:300px;
+}
+
+.sidebar__navigation{
+    background-color: #121212;
+    border-radius:8px;
+    padding:16px 0 0 16px;  
+}
+
+.logo{
+    background: #121212;
+    display:flex;
+    border-radius: 8px;
+    padding:16px 0 0 16px;
+}
+
+.sidebar__navigation .logo img{
+    width:80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+.sidebar ul li {
+    padding: 10px 0; /*cima/baixo e lateris*/
+
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;  
+    font-size: 14px;  /* vai pro icone tb o tamanho */
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 8px;  /*borda arredondada*/
+    display: flex;    
+    justify-content: space-between; /*posicionamento justificado*/
+    flex-direction: column;
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;   /*peso da font*/
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.library .library__button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent; /*botao da sua biblioteca*/
+    border: 0px;  /*tirar a borda*/
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;  /*centralizar o texto*/
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px; /*cima/baixo e laterais*/
+}
+
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;  /*nao ficar grudado na direita*/
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus { /*botao de + */
+    margin: 24px 10px;
+}
+
+.section-playlist {
+    display: flex;
+    align-items: flex-start;  /*se posicionar em cima no canto*/
+    justify-content: space-between;
+    gap: 20px;  /*tamanho entre os espaços*/
+    background-color: #242424;
+    color: #b3b3b3;  /*cor texto*/
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-playlist .section-playlist__content { 
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text {
+    padding-bottom: 14px; /*espaço entre os textos*/
+    color: #fff;
+}
+
+.section-playlist__content .title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section-playlist__content .subtitle {
+    font-size: 14px;
+    font-weight: 500;
+} 
+
+.section-playlist__content .section-playlist__button {
+    display: flex;
+    justify-content: center; /*alinha no centro do botao*/
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+    border: 0px;
+    width: 113px; /*largura botão*/
+}
+
+
+/*PARTE NOVA PODCAST*/
+.section-podcast {
+    display: flex;
+    align-items: flex-start;  /*se posicionar em cima no canto*/
+    justify-content: space-between;
+    gap: 20px;  /*tamanho entre os espaços*/
+    background-color: #242424;
+    color: #b3b3b3;  /*cor texto*/
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-podcast .section-podcast__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-podcast__content .text {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.section-podcast__content .title__podcast {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.section-podcast__content .subtitle__podcast {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-podcast__content .section-podcast__button {
+    display: flex;
+    justify-content: center; /*alinha no centro do botao*/
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+    border: 0px;
+    width: 200px; /*largura botão*/
+}
+
+.column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .sidebar .cookies,
+  .sidebar .legal,
+  .sidebar .centro__de__privacidade,
+  .sidebar .políticas__de__privacidade,
+  .sidebar .sobre__anuncios,
+  .sidebar .acessibilidade,
+  .sidebar .notice,
+  .sidebar .your__privacy {
+    margin: 10px 10px;
+    word-spacing: -1px
+  }
+
+  .sidebar a {
+    color: #b3b3b3;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+
+
+
+.languages .languages__button {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #fff;
+    font-weight: bold;  /*equivale ao 700*/
+    cursor: pointer;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px; /*borda arredondada do botao*/
+}
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
